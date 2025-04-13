@@ -1,0 +1,19 @@
+# Entornos virtuales
+venv/
+venv311/
+.env
+
+# Archivos de Python innecesarios
+__pycache__/
+*.pyc
+
+# Archivos del sistema operativo
+.DS_Store
+
+# Archivos sensibles o que cambian frecuentemente
+registro.json
+gemba_agenda.json
+
+# Backups o archivos generados
+*.bak
+*.swp
