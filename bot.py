@@ -19,7 +19,7 @@ with open("gemba_prompt.txt", "r", encoding="utf-8") as f:
     base_prompt = f.read()
 
 # Cargar calendario
-with open("gemba_agenda.json", "r", encoding="utf-8") as f:
+with open("agenda/gemba_agenda.json", "r", encoding="utf-8") as f:
     agenda = json.load(f)
 
 def generar_contexto_agenda(agenda):
