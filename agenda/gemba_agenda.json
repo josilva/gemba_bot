@@ -1,0 +1,262 @@
+{
+  "2025-05-04": [
+    {
+      "hora": "16:00 a 18:00",
+      "actividad": "Actividad inicial / apertura templo de debod",
+      "direccion": "C. de Ferraz, 1, Moncloa - Aravaca, 28008 Madrid, España",
+      "maps": "https://maps.app.goo.gl/CntMXBxtbLvAVQTk7"
+    },
+    {
+      "hora": "Opcion 2 - 18:00 a 20:00",
+      "actividad": "Restaurant Txirimiri Ferraz",
+      "direccion": "C. de Ferraz, 38, Moncloa - Aravaca, 28008 Madrid",
+      "maps": "https://maps.app.goo.gl/NXNHKTnkV7f3dzvJA"
+    }
+  ],
+  "2025-05-05": [
+    {
+      "hora": "9.00 a 11.00",
+      "actividad": "Invesyde",
+      "direccion": "Av del Cardenal Herrera Oria, 63, 3º Izquierda, Fuencarral-El Pardo, 28034 Madrid, España",
+      "maps": "https://goo.gl/maps/1v67R5WFuNEqhLvb9"
+    },
+    {
+      "hora": "11.00 a 11.30",
+      "actividad": "TBD",
+      "direccion": NaN,
+      "maps": ""
+    },
+    {
+      "hora": "12.30 a 14.00",
+      "actividad": "Globant",
+      "direccion": "Pl. Pablo Ruiz Picasso, 11, Piso 7, Tetuán, Tetuán, 28020 Madrid",
+      "maps": "https://maps.app.goo.gl/JNep6TXeBaK2dGMj8"
+    },
+    {
+      "hora": "14.00 a 15.00",
+      "actividad": "Almuerzo en Globant",
+      "direccion": NaN,
+      "maps": ""
+    },
+    {
+      "hora": "15.00 a 18.00",
+      "actividad": "Santander Seguros",
+      "direccion": "C. de Josefa Valcárcel, 34, San Blas-Canillejas, 28027 Madrid",
+      "maps": "https://maps.app.goo.gl/W7sg59pghdgZ66rJA"
+    },
+    {
+      "hora": "19",
+      "actividad": "Clarity - Edu Ferro / Meetup en TWY",
+      "direccion": "P.º de las Acacias, 50 Bis, Arganzuela, 28005 Madrid",
+      "maps": "https://maps.app.goo.gl/HLFPgCKjSLmeSHYW8"
+    }
+  ],
+  "2025-05-06": [
+    {
+      "hora": "9:00 a 10:00",
+      "actividad": "Traslado a Origami Shcool (¿o desayuno con Edu F?)",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "10:00 a 16:00",
+      "actividad": "Origami School + Lego?",
+      "direccion": "Av. de los Prados, 3A, 28413 El Boalo, Madrid, España",
+      "maps": "https://goo.gl/maps/jR9CuZ7yhj2TFAvPA"
+    },
+    {
+      "hora": "16:00 a 17:00",
+      "actividad": "Traslado a Supermercado La Osa",
+      "direccion": NaN,
+      "maps": ""
+    },
+    {
+      "hora": "17:00 a 19:30",
+      "actividad": "Supermercado La Osa",
+      "direccion": "Av. de Asturias, 57, Tetuán, 28029 Madrid, España",
+      "maps": "https://maps.app.goo.gl/q4Lsjcp5U3HcV3ox7"
+    },
+    {
+      "hora": "19:30 a 20:00",
+      "actividad": "(Opt) Traslado a Aeropuerto",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "22:10",
+      "actividad": "(Opt) Salida a Bilbao - Vuelo IB 0441",
+      "direccion": "-",
+      "maps": ""
+    }
+  ],
+  "2025-05-07": [
+    {
+      "hora": "9:00 a 10:00",
+      "actividad": "Traslado a Logos",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "10:00 a 13:00",
+      "actividad": "Logos",
+      "direccion": "Polígono Elbarrena, s/n. Apdo. 23. 20247 Zaldibia, Gipuzkoa. Spain",
+      "maps": "https://maps.app.goo.gl/kaGRwFprsorNDsLM7"
+    },
+    {
+      "hora": "13:00 a 14:30",
+      "actividad": "Traslado y Almuerzo con NER",
+      "direccion": "Berjaldegi Enparantza Plaza, 20216 Ormaiztegi, Gipuzkoa, Spain",
+      "maps": "https://maps.app.goo.gl/AgzsmC13aEoHqsDcA"
+    },
+    {
+      "hora": "14:30 a 15:30",
+      "actividad": "Traslado a San Sebastian",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "15:30 a 19:00",
+      "actividad": "Caminata por San Sebastian / Charla sociocracia",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "19:00 a 20:00",
+      "actividad": "Restaurant TBD",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "20:00",
+      "actividad": "Traslado a Bilbao",
+      "direccion": "-",
+      "maps": ""
+    }
+  ],
+  "2025-05-08": [
+    {
+      "hora": "8:30 a 10:00",
+      "actividad": "Desayuno con Josera",
+      "direccion": NaN,
+      "maps": ""
+    },
+    {
+      "hora": "10:30 a 11:00",
+      "actividad": "Charla con David en Sala del Museo",
+      "direccion": "Abandoibarra Etorb., 2, Abando, 48009 Bilbo, Bizkaia, España\r",
+      "maps": "https://goo.gl/maps/BG47FgjKb7rY4C197"
+    },
+    {
+      "hora": "11:00 a 13:00",
+      "actividad": "Visita Museo Guggenheim con Lucia",
+      "direccion": "Abandoibarra Etorb., 2, Abando, 48009 Bilbo, Bizkaia, España\r",
+      "maps": "https://goo.gl/maps/BG47FgjKb7rY4C197"
+    },
+    {
+      "hora": "13:00 a 14:00",
+      "actividad": "Almuerzo",
+      "direccion": NaN,
+      "maps": ""
+    },
+    {
+      "hora": "14:00 a 16:30",
+      "actividad": "Caminata por fuera del museo con concepto",
+      "direccion": "Abandoibarra Etorb., 2, Abando, 48009 Bilbo, Bizkaia, España\r",
+      "maps": "https://goo.gl/maps/BG47FgjKb7rY4C197"
+    },
+    {
+      "hora": "16:30 a 17:00",
+      "actividad": "Cierre en las esculturas de Serra",
+      "direccion": "Abandoibarra Etorb., 2, Abando, 48009 Bilbo, Bizkaia, España\r",
+      "maps": "https://goo.gl/maps/BG47FgjKb7rY4C197"
+    },
+    {
+      "hora": "17:00 a 18:00",
+      "actividad": "(Opt) Traslado a aeropuerto",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "19:50",
+      "actividad": "(Opt) Salida a Barcelona - Vuelo VY 1437",
+      "direccion": "-",
+      "maps": ""
+    }
+  ],
+  "2025-05-09": [
+    {
+      "hora": "09:00 a 11:00",
+      "actividad": "Voxel",
+      "direccion": "Av. Diagonal, 67, Sant Martí, 08019 Barcelona, España\r",
+      "maps": "https://goo.gl/maps/JotMa3RknixhS3tH9"
+    },
+    {
+      "hora": "12:00 a 14:00",
+      "actividad": "Basetis",
+      "direccion": "La Pedrera - Casa Milà, Casa Milà, Pg. de Gràcia, 92, 1r 2a, Eixample, 08008 Barcelona, Spain",
+      "maps": "https://maps.app.goo.gl/15pzcuAsrksDnFReA"
+    },
+    {
+      "hora": "14:00 a 17:00",
+      "actividad": "RunRoom",
+      "direccion": "Carrer de Santa Eulàlia, 5-9, 3ª planta, Gràcia, 08012 Barcelona, España\r",
+      "maps": "https://goo.gl/maps/y2ky94UcfUzRoaJV8"
+    },
+    {
+      "hora": "17:00 a 18:00",
+      "actividad": "Sagrada Familia",
+      "direccion": "Eixample, Barcelona, España",
+      "maps": "https://maps.app.goo.gl/AxVYYktaX9ttBivC8"
+    },
+    {
+      "hora": "18:00 a 18:30",
+      "actividad": "Traslado a Castells",
+      "direccion": NaN,
+      "maps": ""
+    },
+    {
+      "hora": "19:00 a 22:00",
+      "actividad": "Castells + cena",
+      "direccion": NaN,
+      "maps": ""
+    }
+  ],
+  "2025-05-10": [
+    {
+      "hora": "10:00 a 13:00",
+      "actividad": "Sesion con Lisa e Ingrid",
+      "direccion": "?",
+      "maps": ""
+    },
+    {
+      "hora": "13:00 a 14:00",
+      "actividad": "Restaurant TBD",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "14:00 a 15:00",
+      "actividad": "Translado a la playa",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "15:00 a 18:30",
+      "actividad": "Cierre en la playa",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "18:30 a 19:00",
+      "actividad": "Restaurant TBD",
+      "direccion": "-",
+      "maps": ""
+    },
+    {
+      "hora": "19:00",
+      "actividad": "Coctel de cierre",
+      "direccion": "Xiringuito",
+      "maps": ""
+    }
+  ]
+}
