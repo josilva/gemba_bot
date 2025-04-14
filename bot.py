@@ -9,6 +9,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 from pathlib import Path
 from telegram.constants import ChatAction
 import requests
+from rag_laloux import preparar_laloux, responder_laloux
 
 
 # Cargar .env
@@ -199,7 +200,9 @@ if __name__ == "__main__":
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("registrar", registrar))
+    app.add_handler(CommandHandler("laloux", responder_laloux))
     app.add_handler(MessageHandler(filters.VOICE, transcribir_audio))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, respuesta_general))
-    print("Bot corriendo con lógica refinada...")
+    print("Bot corriendo con RAG v.1...")
+    preparar_laloux()
     app.run_polling()
