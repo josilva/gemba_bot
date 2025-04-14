@@ -126,6 +126,9 @@ async def registrar(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("✅ ¡Registrado!")
 
 
+# Instanciamos el cliente de OpenAI (esto se puede hacer una vez global si querés)
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 async def transcribir_audio(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.chat.send_action(action=ChatAction.TYPING)
 
@@ -134,18 +137,22 @@ async def transcribir_audio(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("No pude encontrar el audio 😕")
         return
 
+    # Descargar el archivo de voz
     file = await context.bot.get_file(voice.file_id)
-    file_path = f"/tmp/audio.ogg"
+    file_path = "/tmp/audio.ogg"
     await file.download_to_drive(file_path)
 
-    # Enviar a Whisper
+    # Transcripción usando Whisper (nuevo formato)
     with open(file_path, "rb") as f:
-        transcript = openai.Audio.transcribe("whisper-1", f)
+        transcript = client.audio.transcriptions.create(
+            model="whisper-1",
+            file=f
+        )
 
-    texto = transcript["text"]
+    texto = transcript.text
     await update.message.reply_text(f"🗣️ Dijiste: {texto}")
 
-    # Enviar a GPT-4 como si fuera texto
+    # Armar prompt para GPT-4
     prompt_con_agenda = f"{base_prompt}\n\n{agenda_contexto}\n\nUsuario: {texto}\nAsistente:"
     response = openai.chat.completions.create(
         model="gpt-4",
