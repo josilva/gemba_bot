@@ -3,5 +3,4 @@ openai==1.17.0
 python-dotenv==1.0.1
 requests==2.31.0
 PyMuPDF==1.23.7
-tiktoken==0.5.1
 numpy==1.26.4
