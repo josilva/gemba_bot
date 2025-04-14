@@ -9,7 +9,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 from pathlib import Path
 from telegram.constants import ChatAction
 import requests
-from rag_laloux import preparar_laloux, responder_laloux
+from rag_laloux_lite import preparar_laloux, responder_laloux
 
 
 # Cargar .env
