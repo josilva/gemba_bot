@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from pathlib import Path
+from telegram.constants import ChatAction
+import requests
+
 
 # Cargar .env
 load_dotenv()
@@ -122,6 +125,36 @@ async def registrar(update: Update, context: ContextTypes.DEFAULT_TYPE):
         json.dump(data, f, indent=2, ensure_ascii=False)
     await update.message.reply_text("✅ ¡Registrado!")
 
+
+async def transcribir_audio(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.chat.send_action(action=ChatAction.TYPING)
+
+    voice = update.message.voice
+    if not voice:
+        await update.message.reply_text("No pude encontrar el audio 😕")
+        return
+
+    file = await context.bot.get_file(voice.file_id)
+    file_path = f"/tmp/audio.ogg"
+    await file.download_to_drive(file_path)
+
+    # Enviar a Whisper
+    with open(file_path, "rb") as f:
+        transcript = openai.Audio.transcribe("whisper-1", f)
+
+    texto = transcript["text"]
+    await update.message.reply_text(f"🗣️ Dijiste: {texto}")
+
+    # Enviar a GPT-4 como si fuera texto
+    prompt_con_agenda = f"{base_prompt}\n\n{agenda_contexto}\n\nUsuario: {texto}\nAsistente:"
+    response = openai.chat.completions.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": prompt_con_agenda}],
+        temperature=0.7
+    )
+
+    await update.message.reply_text(response.choices[0].message.content.strip())
+
 async def respuesta_general(update: Update, context: ContextTypes.DEFAULT_TYPE):
     mensaje = update.message.text
     posible_fecha = normalizar_fecha(mensaje)
@@ -159,6 +192,7 @@ if __name__ == "__main__":
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("registrar", registrar))
+    app.add_handler(MessageHandler(filters.VOICE, transcribir_audio))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, respuesta_general))
     print("Bot corriendo con lógica refinada...")
     app.run_polling()
